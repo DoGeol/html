@@ -1,0 +1,35 @@
+.subject_area {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.content_area {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: springgreen;
+}
+
+.profile_area {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.text_area{
+    width: 100%;
+    background-color: saddlebrown;
+}
+
+.thumbnail_img_area {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: rebeccapurple;
+}
