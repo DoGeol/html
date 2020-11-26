@@ -1,0 +1,29 @@
+.profile {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.title {
+    font-size: 26px;
+    font-family: 'gulim';
+    color: blue;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+p.special {
+    font-size: 16px;
+    text-align: center;
+}
+
+.description {
+    width: 400px;
+    background-color: cadetblue;
+    margin: 50px;
+    padding : 30px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
