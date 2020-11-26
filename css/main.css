@@ -1,9 +1,26 @@
+/* 
+    이미지와 같은 부분을 중앙 정렬 하기 위해서는
+    display: block, 
+    margin-left: auto,
+    margin-right: auto
+    속성을 주면 된다. 
+
+    tip) margin (left || right): auto; === margin: auto;
+ */
 .profile {
     width: 200px;
     display: block;
     margin: auto;
 }
 
+/* 
+    font-size : 폰트 사이즈 변경
+    font-family : 폰트 변경
+    font-weight : 글씨 크기 변경
+    letter-spacing : 자간
+    color : 폰트 색상 변경
+    텍스트 정렬 : text-align 사용
+*/
 .title {
     font-size: 26px;
     font-family: 'gulim';
