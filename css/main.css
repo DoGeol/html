@@ -106,27 +106,35 @@ body {
     width: 100px;
 }
 
+/* 
+    position: absolute 적용한 요소의 가운데 정렬
+
+    position : absolute; 
+    left : 0;
+    right : 0; 
+    margin-left : auto;
+    margin-right : auto;
+    width : 적절히
+*/
+
 .subject-box {
-    position: absolute;
+    position: relative;
     padding: 50px;
     background-color: lightgrey;
     width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: -30%;
+    top: -30px;
+    text-align: center;
 }
 
 .subject-box > .subject-title {
     margin: 0px;
     margin-bottom: 30px;
-    text-align: center;
     font-size: 30px;
 }
 
 .subject-box > .subject-desc {
-    text-align: center;
     font-size: 8px;
 }
