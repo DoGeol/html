@@ -54,3 +54,24 @@
 p {
     font-size: 8px;
 }
+
+.li-inline li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.navbar {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.li-inline a {
+    text-decoration: none;
+}
+
+.li-inline a:visited {
+    color : black;
+}
