@@ -99,9 +99,34 @@ body {
         absolute        : 기준점이 부모 엘리먼츠 (position:relative를 가지고있는 부모에 달라붙음)
     */
     position: absolute;
-    bottom: 10px;
+    bottom: 90px;
     left: 0;
     right: 0;
     margin: auto;
     width: 100px;
+}
+
+.subject-box {
+    position: absolute;
+    padding: 50px;
+    background-color: lightgrey;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -30%;
+}
+
+.subject-box > .subject-title {
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subject-box > .subject-desc {
+    text-align: center;
+    font-size: 8px;
 }
