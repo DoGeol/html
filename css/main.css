@@ -1,4 +1,4 @@
-div{
+div {
     box-sizing: border-box;
 }
 
@@ -11,6 +11,7 @@ div{
 
     tip) margin (left || right): auto; === margin: auto;
  */
+
 .profile {
     width: 200px;
     display: block;
@@ -25,6 +26,7 @@ div{
     color : 폰트 색상 변경
     텍스트 정렬 : text-align 사용
 */
+
 .title {
     font-size: 26px;
     font-family: 'gulim';
@@ -42,7 +44,7 @@ p.special {
     width: 400px;
     background-color: cadetblue;
     margin: 50px;
-    padding : 30px;
+    padding: 30px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -75,14 +77,14 @@ body {
     font-size: 30px;
 }
 
-.main-content { 
+.main-content {
     padding: 20px;
     text-align: center;
     color: white;
     font-size: 20px;
 }
 
-.main-button { 
+.main-button {
     padding: 10px;
     font-size: 16px;
     font-family: 'nanumsquare';
@@ -134,12 +136,101 @@ body {
     text-align: center;
 }
 
-.subject-box > .subject-title {
+.subject-box>.subject-title {
     margin: 0px;
     margin-bottom: 30px;
     font-size: 30px;
 }
 
-.subject-box > .subject-desc {
+.subject-box>.subject-desc {
     font-size: 8px;
+}
+
+.sample-input {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.contact-background {
+    margin-top: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+}
+
+.contact-box {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.contact-box .contact-box-item {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contact-box .title {
+    font-size: 14px;
+    color: black;
+    letter-spacing: normal;
+    text-align: inherit;
+}
+
+.contact-box input[type=text] {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 294px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.contact-box input[type=button] {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+.contact-box textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 294px;
+    height: 90px;
+    resize: none;
+}
+
+.contact-box .contact-name .first-name {
+    width: 49%;
+    float: left;
+}
+
+.contact-box .contact-name .last-name {
+    width: 49%;
+    float: right;
+}
+
+.contact-box .contact-msg {
+    clear: both;
+}
+
+.contact-box .contact-footer {}
+
+.contact-box .contact-footer .subscribe {
+    display: inline-block;
+}
+
+.contact-box .contact-footer .footer-btn {
+    right: 0;
+}
+
+.contact-box .contact-name input[type=text] {
+    width: 140px;
 }

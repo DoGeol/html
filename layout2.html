@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <title>Document</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/subject3.css'>
 </head>
 <body>
     <div class="main-background">
@@ -13,5 +14,89 @@
             <button class="main-button position">Click Me</button> 
         </div>
     </div>    
+    <!-- 겹치는 Div 만들기 -->
+    <div class="subject-box">
+        <h3 class="subject-title">갤럭시컴퍼니 온라인 이벤트</h3>
+        <p class="subject-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo obcaecati perspiciatis odio esse magnam necessitatibus sapiente quasi distinctio omnis, iste deserunt amet neque rem cupiditate nihil in similique voluptas ratione.</p>
+    </div>
+
+    <!-- Form Tag 사용하여 Contact us 만들기 -->
+    <div>
+        <form>
+            <input type="text" class="sample-input">
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <input type="submit" value="보내기">
+            <button type="submit">전송버튼</button>
+        </form>
+    </div>
+
+    <!-- 과제3 : contact us layout -->
+    <div class="contact-background">
+        <div class="contact-box">
+            <div class="contact-box-item contact-header">
+                <h2>contact us</h2>
+            </div>
+            <div class="contact-box-item contact-email">
+                <div class="title">Your Eamil</div>
+                <input type="text" placeholder="email@example.com">
+            </div>
+            <div class="contact-box-item contact-name">
+                <div class="first-name">
+                    <div class="title">First name</div>
+                    <input type="text">
+                </div>
+                <div class="last-name">
+                    <div class="title">Last name</div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="contact-box-item contact-msg">
+                <div class="title">Message</div>
+                <textarea></textarea>
+            </div>
+            <div class="contact-box-item contact-footer">
+                <div class="subscribe">
+                    <span><input type="checkbox" value="">Subscribe</span>
+                </div>
+                <input class="footer-btn" type="button" value="SEND">
+            </div>
+        </div>
+    </div>
+
+    <!-- 과제3 : 강의 버전 -->
+    <div class="form-background">
+        <div class="form-white">
+            <h3>contact us</h3>
+            <form>
+                <div class="form-whole">
+                    <p>Your Email</p>
+                    <input class="form-input" type="email">
+                </div>
+                <div class="form-half">
+                    <p>First name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div class="form-half">
+                    <p>Last name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div style="clear: both;"></div>
+                <div class="form-whole">
+                    <p>Message</p>
+                    <textarea class="form-input" rows="5"></textarea>
+                </div>
+                <div class="form-whole">
+                    <input type="checkbox" id="check"><label for="check">Subscribe</span>
+                </div>
+                <button type="submit" class="form-submit">SEND</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
