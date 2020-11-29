@@ -221,8 +221,6 @@ body {
     clear: both;
 }
 
-.contact-box .contact-footer {}
-
 .contact-box .contact-footer .subscribe {
     display: inline-block;
 }
@@ -233,4 +231,119 @@ body {
 
 .contact-box .contact-name input[type=text] {
     width: 140px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.cart-background {
+    background-color: cadetblue;
+}
+
+.cart-container { 
+    padding: 30px;
+}
+
+.cart-content {
+    display: block;
+    margin: auto;
+}
+
+.cart-content table {
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+.cart-content td, th {
+    border-top: 1px solid cadetblue;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid cadetblue;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.cart-content th {
+    text-align: right;
+    color: grey;
+}
+
+.cart-content tr {
+    text-align: right;
+}
+
+.cart-content th:nth-child(2) {
+    text-align: left;
+}
+
+.cart-content .cart-item td:first-child {
+    text-align: center;
+    width: 20%;
+}
+
+.cart-content .cart-item td:nth-child(2) {
+    text-align: left;
+    width: 45%;
+}
+
+.cart-content .cart-item img {
+    width: 40px;
+}
+
+.cart-content .cart-item .product-info {
+    display: inline-block;
+    text-align: left;
+}
+
+.cart-content .cart-item .product-info .product-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-content .cart-item .product-info .product-detail {
+    font-size: 15px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.cart-content .cart-item .amount,
+.cart-content .cart-item .price {
+    color: cadetblue;
+}
+
+.cart-container .cart-footer{
+    margin-top: 10px;
+}
+
+.cart-container .cart-footer .left {
+    float: left;
+}
+
+.cart-container .cart-footer .left a {
+    color: navy;
+}
+
+.cart-container .cart-footer .left a:visited {
+    color: navy;
+}
+
+.cart-container .cart-footer .right {
+    float: right;
+}
+
+.cart-container .cart-footer button.cart-btn {
+    padding: 20px;
+    color: white;
+    background-color: rgb(4, 4, 68);
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
 }
