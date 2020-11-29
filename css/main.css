@@ -377,3 +377,63 @@ td, th {
     width: 50%;
     text-align: left;
 }
+
+/* pseudo-class  */
+
+.cart-background2 .btn {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-background2 .btn-brown {
+    background-color: coral;
+    color: white;
+}
+
+.cart-background2 .btn-brown:hover {
+    background-color: chocolate;
+}
+
+/* 
+.cart-background2 .btn-brown:focus {
+    background-color: red;
+} 
+*/
+
+.cart-background2 .btn-brown:active {
+    background-color: brown;
+}
+
+.cart-background2 .btn-red {
+    background-color: red;
+    color: white;
+}
+
+.cart-background2 .btn-red:hover {
+    background-color: rgb(138, 18, 18);
+}
+
+/* 
+.cart-background2 .btn-red:focus {
+    background-color: red;
+} 
+*/
+
+.cart-background2 .btn-red:active {
+    background-color: rgb(231, 137, 137);
+}
+
+.cart-background2 .custom-link {
+    text-decoration: none;
+}
+
+.cart-background2 .custom-link:link {
+    color: black;
+}
+
+.cart-background2 .custom-link:visited {
+    color: red;
+}
