@@ -1,3 +1,15 @@
+
+@font-face {
+    font-family: '나눔스퀘어';
+    /* 파일이 아닌 구글 font 경로를 상단에 import하여 사용해도 괜찮음 */
+    src: url('../fonts/NanumSquareR.woff');
+}
+
+/* 폰트 사용 할 때 0.03도 돌려주면 부드러운 글씨로 보임 */
+p,span,h1,h2,h3,h4 {
+    transform: rotate(0.03deg);
+}
+
 div {
     box-sizing: border-box;
 }
