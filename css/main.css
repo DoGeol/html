@@ -507,3 +507,66 @@ td, th {
     padding-right: 20px;
     cursor: pointer;
 }
+
+.responsive-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive-container .item {
+    text-align: center;
+    min-width: 200px;
+    width: 23%;
+}
+
+.explain-container {
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.explain-container div.item {
+    margin-top: 50px;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width: 992px) {
+    .main-title {
+        color: brown;
+        font-size: 20px;
+    }
+    .responsive-container {
+        flex-wrap: wrap;
+    }
+    
+    .responsive-container .item {
+        width: 45%;
+    }
+    
+    .explain-container {
+        max-width: 800px;
+    }
+
+    .explain-container div.item {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        color: blue;
+        font-size: 10px;
+    }
+    .responsive-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .explain-container div.item {
+        float: none;
+        width: 100%;
+    }
+}
