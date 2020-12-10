@@ -4,6 +4,7 @@
     border-radius: 5px;
     padding: 15px 40px;
     background-color: #343A40;
+    box-sizing: border-box;
 }
 .p-banner.b-main {
     background: #397fb3;
@@ -21,13 +22,13 @@
 .b-main .text-wrap p {
     margin-top: 20px;
 }
-.b-main .p-h1 {
+.p-banner .p-h1 {
     font-size: 50px;
 }
 .b-main .p-h1:first-child{
     margin-top: 20px;
 }
-.b-main .text-wrap p.f-size-middle {
+.b-banner p.f-size-middle {
     font-size: 20px;
 }
 .b-main .img-wrap {
@@ -42,8 +43,210 @@
     max-width: 400px;
     width: 100%;
 }
-
-
 .f-white {
     color: white;
+}
+
+.p-banner.b-sub {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-banner.b-sub {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-sub .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-banner .p-h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.b-sub p {
+    color: gray;
+}
+
+.p-offer.o-static {
+    background: #3D80B7;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.p-offer .offer-tag {
+    color: #EDDB43;
+    font-size: 12px;
+    text-shadow: 1px 1px #666;
+}
+
+.p-offer .offer-title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.o-static .offer-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.o-static .offer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.o-static .offer-item .icon-wrap {
+    width: 80px;
+    height: 80px;
+    border-radius: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-static .offer-item .icon-wrap i {
+    font-size: 30px;
+    color: #3D80B7;
+}
+
+.o-static .offer-item .offer-subTitle {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.o-static .offer-item .offer-description {
+    font-size: 12px;
+    color: #c2d3de;
+    margin-top: 20px;
+}
+
+.p-offer.o-responsive {
+    margin: 100px 0;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-offer.o-responsive {
+    margin: 20px 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-responsive .offer-content {
+    margin-top: 20px;
+    width: 70%;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.o-responsive .offer-content .offer-item {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-responsive .offer-content .offer-item.background {
+    /*
+    반응형 웹에서 자주 사용하는 속성
+    cover : 사이즈 맞춰서 영역을 축소시키지 않고 싶을 때 사용
+    contain : 그림이 짤리지 않고 싶을때 사용
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background01 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/portfolio-1.jpg);
+}
+.background02 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/portfolio-2.jpg);
+}
+.background03 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/portfolio-3.jpg);
+}
+.background04 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/portfolio-4.jpg);
+}
+
+.o-responsive .offer-content .offer-item .content-wrap {
+    margin-top: 50px;
+    width: 80%;
+    text-align: left;
+}
+
+.o-responsive .offer-content .offer-item .content-wrap .offer-subTitle {
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.o-responsive .offer-content .offer-item .content-wrap .offer-description {
+    margin-top: 5px;
+    color: #c2d3de;
+}
+.p-footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-footer .link-content {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.p-footer .link-content .link-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D80B7;
+    border-radius: 500px;
+    box-shadow: 0 2px #c2d3de;
+}
+
+.p-footer .link-content .link-item i {
+    font-size: 20px;
+    color: white;
+}
+
+.p-footer .copyright {
+    font-size: 15px;
+    color: #666666;
 }
