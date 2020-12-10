@@ -267,3 +267,27 @@
     font-size: 15px;
     color: #666666;
 }
+
+@media screen and (max-width: 768px) {
+    .p-banner.b-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .b-main .text-wrap {
+        margin-top: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .b-main .img-wrap {
+        margin-top: 40px;
+    }
+
+    .p-offer.o-responsive {
+        height: 1000px;
+    }
+
+    .o-responsive .offer-content .offer-item {
+        width: 100%;
+        height: 200px;
+    }
+}
