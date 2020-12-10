@@ -5,6 +5,7 @@
     padding: 15px 40px;
     background-color: #343A40;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .p-banner.b-main {
     background: #397fb3;
