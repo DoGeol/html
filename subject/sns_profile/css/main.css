@@ -1,0 +1,112 @@
+body {
+    background-color: #F7F9FC;
+}
+
+.sns_container {
+    /*background-color: #a5bcde;*/
+    box-sizing: border-box;
+}
+
+.sns_container .btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* 버튼 컬러 */
+.sns_container .btn.c-blue {
+    background-color: #4996DA;
+}
+
+/* 폰트 컬러 */
+.sns_container .f-white {
+    color: white;
+}
+
+.profile_info  {
+    margin: 80px auto;
+    width: 80%;
+    min-width: 769px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #dedede;
+    border-left: none;
+    border-top: none;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px #dedede;
+}
+
+.profile_info:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
+}
+
+.profile_simple {
+    width: 60%;
+    height: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.profile_simple .profile_img {
+    width: 150px;
+    border-radius: 100px;
+    float: left;
+}
+
+.profile_simple .profile_simple_item {
+    margin-left: 30px;
+    border-radius: 50px;
+    height: 150px;
+    float: left;
+}
+.profile_simple_item p {
+    margin-top: 5px;
+}
+
+.profile_simple_item .location {
+    margin-top: 5px;
+    color: #4996DA;
+}
+
+.profile_simple_item p.name {
+    font-size: 30px;
+    font-weight: 500;
+}
+.profile_simple_item p.job {
+    font-size: 15px;
+}
+
+.profile_simple_item .btn {
+    margin-top: 5px;
+}
+
+.profile_detail {
+    width: 30%;
+    height: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.profile_detail .detail_item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile_detail .detail_item p {
+    margin-top: 10px;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.profile_detail .detail_item p.item_title {
+    font-weight: 800;
+}
