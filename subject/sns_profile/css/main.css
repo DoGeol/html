@@ -1,12 +1,22 @@
 body {
     background-color: #F7F9FC;
 }
-
 .sns_container {
     /*background-color: #a5bcde;*/
     box-sizing: border-box;
 }
-
+/* a link 기본 */
+.sns_container a {
+    color: black;
+}
+.sns_container a:visited {
+    color: black;
+}
+.sns_container a:link {
+    color: black;
+    text-decoration: none;
+}
+/* 버튼 */
 .sns_container .btn {
     border: none;
     padding: 5px 10px;
@@ -14,24 +24,21 @@ body {
     cursor: pointer;
     font-size: 12px;
 }
-
 /* 버튼 컬러 */
 .sns_container .btn.c-blue {
     background-color: #4996DA;
 }
-
-/* 버튼 컬러 */
 .sns_container .btn.c-blue:hover {
     background-color: #1a5894;
 }
-
 /* 폰트 컬러 */
 .sns_container .f-white {
     color: white;
 }
-
 .profile_info  {
-    margin: 80px auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     min-width: 769px;
     height: 200px;
@@ -42,12 +49,10 @@ body {
     border-radius: 5px;
     box-shadow: 1px 5px 5px #dedede;
 }
-
 .profile_info:hover  {
     background-color: #dedede;
     transition: background-color 300ms linear;
 }
-
 .profile_info:before {
     content: "";
     display: inline-block;
@@ -55,7 +60,6 @@ body {
     height: 100%;
     width: 0;
 }
-
 .profile_simple {
     width: 60%;
     height: 150px;
@@ -63,13 +67,11 @@ body {
     vertical-align: middle;
     text-align: left;
 }
-
 .profile_simple .profile_img {
     width: 150px;
     border-radius: 100px;
     float: left;
 }
-
 .profile_simple .profile_simple_item {
     margin-left: 30px;
     border-radius: 50px;
@@ -79,12 +81,10 @@ body {
 .profile_simple_item p {
     margin-top: 5px;
 }
-
 .profile_simple_item .location {
     margin-top: 5px;
     color: #4996DA;
 }
-
 .profile_simple_item p.name {
     font-size: 30px;
     font-weight: 500;
@@ -96,7 +96,6 @@ body {
 .profile_simple_item .btn {
     margin-top: 5px;
 }
-
 .profile_detail {
     width: 30%;
     height: 150px;
@@ -108,7 +107,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 .profile_detail .detail_item p {
     margin-top: 10px;
     display: inline-block;
@@ -116,7 +114,32 @@ body {
     text-align: left;
     font-size: 15px;
 }
-
 .profile_detail .detail_item p.item_title {
     font-weight: 800;
+}
+.profile_contents {
+    margin: auto;
+    width: 80%;
+}
+.profile_contents .contents_nav {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #c1c1c1;
+}
+.profile_contents .contents_nav li {
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.profile_contents .contents_nav li a {
+    color: #8d8c8c;
+}
+.profile_contents .contents_nav li.active {
+    border-bottom: 2px solid #4996DA;
+}
+.profile_contents .contents_nav li.active a {
+    color: #4996DA
 }
