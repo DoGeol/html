@@ -20,6 +20,11 @@ body {
     background-color: #4996DA;
 }
 
+/* 버튼 컬러 */
+.sns_container .btn.c-blue:hover {
+    background-color: #1a5894;
+}
+
 /* 폰트 컬러 */
 .sns_container .f-white {
     color: white;
@@ -36,6 +41,11 @@ body {
     border-top: none;
     border-radius: 5px;
     box-shadow: 1px 5px 5px #dedede;
+}
+
+.profile_info:hover  {
+    background-color: #dedede;
+    transition: background-color 300ms linear;
 }
 
 .profile_info:before {
