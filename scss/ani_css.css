@@ -1,0 +1,97 @@
+@keyframes shaking {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(40deg) scale(1.5);
+  }
+}
+.ani-container {
+  margin-top: 20px;
+}
+.ani-container .btn {
+  background-color: #87CEEB;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+.ani-container .ani-items {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ani-container .ani-items .ani-item {
+  background-color: #8d8c8c;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.ani-container .ani-items .ani-item .ani-content .btn.shake:hover {
+  animation-name: shaking;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+.ani-container .ani-items .ani-item .ani-content .plus {
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+  width: 60px;
+  cursor: pointer;
+  display: inline-block;
+}
+.ani-container .ani-items .ani-item .ani-content .plus.spin:hover {
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.ani-container .ani-items .ani-item .ani-content .menu {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-250px);
+}
+.ani-container .ani-items .ani-item .ani-content .menu:hover {
+  text-align: center;
+  transform: translateX(0px);
+}
+.ani-container .ani-items .ani-item .ani-content .menu:hover .menu_item {
+  transition: all 1s;
+  transform: translateX(0px);
+}
+.ani-container .ani-items .ani-item .ani-content .menu .menu_title {
+  margin-top: 10px;
+}
+.ani-container .ani-items .ani-item .ani-content .menu .menu_title p {
+  font-size: 30px;
+  margin: 0;
+}
+.ani-container .ani-items .ani-item .ani-content .menu .menu_item {
+  transform: translateX(-400px);
+}
+
+/*# sourceMappingURL=ani_css.css.map */
