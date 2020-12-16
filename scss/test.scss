@@ -1,0 +1,104 @@
+.list-container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  .subject {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .contents {
+      width: 80%;
+      height: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      ol {
+        padding: 0;
+
+        li {
+          list-style: none;
+          border: 1px solid gray;
+          padding: 10px;
+
+          &:not(:first-child) {
+            border-top: none;
+          }
+
+          &.active {
+            background-color: #4C73C9;
+            color: white;
+          }
+        }
+      }
+      .alert {
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 7px;
+        border-radius: 5px;
+
+        p {
+          display: inline-block;
+          margin: 0;
+          font-weight: 800;
+
+          &:first-letter {
+            text-transform: capitalize;
+          }
+        }
+
+        @mixin alert_css( $background_color, $font_color ) {
+          background-color: $background_color;
+          color: $font_color;
+        }
+
+        &.s-success {
+          @include alert_css(#d6fae8, #008000)
+        }
+
+        &.s-info {
+          @include alert_css(#cbf1f1, #0000ff)
+        }
+
+        &.s-warn {
+          @include alert_css(#f1e3b3, #a52a2a)
+        }
+      }
+      .row {
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+        .col-default {
+          border: 1px solid grey;
+          float: left;
+          //display: inline-block;
+          background-color: #c2d3de;
+          height: 50px;
+        }
+        @mixin col-width( $widthVal ){
+          width: $widthVal;
+        }
+        .col-6{
+          @extend .col-default;
+          @include col-width(50%);
+        }
+        .col-4{
+          @extend .col-default;
+          @include col-width(33.33%);
+        }
+        .col-3{
+          @extend .col-default;
+          @include col-width(25%);
+        }
+      }
+      &:before,:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}

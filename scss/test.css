@@ -1,0 +1,86 @@
+.list-container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.list-container .subject {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-container .subject .contents {
+  width: 80%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-container .subject .contents ol {
+  padding: 0;
+}
+.list-container .subject .contents ol li {
+  list-style: none;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.list-container .subject .contents ol li:not(:first-child) {
+  border-top: none;
+}
+.list-container .subject .contents ol li.active {
+  background-color: #4C73C9;
+  color: white;
+}
+.list-container .subject .contents .alert {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 5px;
+}
+.list-container .subject .contents .alert p {
+  display: inline-block;
+  margin: 0;
+  font-weight: 800;
+}
+.list-container .subject .contents .alert p:first-letter {
+  text-transform: capitalize;
+}
+.list-container .subject .contents .alert.s-success {
+  background-color: #d6fae8;
+  color: #008000;
+}
+.list-container .subject .contents .alert.s-info {
+  background-color: #cbf1f1;
+  color: #0000ff;
+}
+.list-container .subject .contents .alert.s-warn {
+  background-color: #f1e3b3;
+  color: #a52a2a;
+}
+.list-container .subject .contents .row {
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+}
+.list-container .subject .contents .row .col-default, .list-container .subject .contents .row .col-3, .list-container .subject .contents .row .col-4, .list-container .subject .contents .row .col-6 {
+  border: 1px solid grey;
+  float: left;
+  background-color: #c2d3de;
+  height: 50px;
+}
+.list-container .subject .contents .row .col-6 {
+  width: 50%;
+}
+.list-container .subject .contents .row .col-4 {
+  width: 33.33%;
+}
+.list-container .subject .contents .row .col-3 {
+  width: 25%;
+}
+.list-container .subject .contents:before, .list-container .subject .contents :after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*# sourceMappingURL=test.css.map */
