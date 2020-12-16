@@ -143,3 +143,43 @@ body {
 .profile_contents .contents_nav li.active a {
     color: #4996DA
 }
+
+.profile_contents .contents_area {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.contents_area .contents_item_wrap {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+.contents_item_wrap.item_left {
+    width: 25%;
+}
+.contents_item_wrap.item_center {
+    width: 50%;
+}
+.contents_item_wrap.item_right {
+    width: 25%;
+}
+.contents_item {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #666666;
+}
+
+.contents_item.h-half {
+    margin: auto;
+    height: 50%;
+    width: 100%;
+    background-color: #666666;
+}
