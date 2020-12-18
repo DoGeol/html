@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+    <link href="scss/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+<body>
+<div id="admin_container">
+    <div class="nav-sticky">
+        <div class="sticky-item"><a href="#"><i class="fas fa-home"></i><p>Home</p></a></div>
+        <div class="sticky-item"><a href="#"><i class="fas fa-headphones-alt"></i><p>Service</p></a></div>
+        <div class="sticky-item"><a href="#"><i class="fas fa-flag"></i><p>Alerts</p></a></div>
+        <div class="sticky-item"><a href="#"><i class="fas fa-chart-pie"></i><p>Stats</p></a></div>
+    </div>
+    <div class="nav-header">
+        <div class="search-box">
+            <input class="search-input" type="text" value="" placeholder="Search">
+            <button class="search-btn" type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="profile-box">
+            <div class="alarm-item">
+                <i class="fas fa-bell"></i>
+                <div class="alarm-count">5</div>
+            </div>
+            <div class="alarm-item">
+                <i class="fas fa-envelope"></i>
+                <div class="alarm-count">9</div>
+            </div>
+            <div class="profile-item">DoGeol Pyeon</div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <h1 style="margin: 20px 0 0 5px;">Dashboard</h1>
+        <div class="columns-container">
+            <div class="columns-item__wrap">
+                <div class="columns-item">
+                    <div class="columns-item__text-wrap">
+                        <div class="columns-item__title">Earnings(Monthly)</div>
+                        <div class="columns-item__sub-title">$400,000</div>
+                    </div>
+                    <div class="columns-item__icon-wrap">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-item__wrap">
+                <div class="columns-item b-green">
+                    <div class="columns-item__text-wrap">
+                        <div class="columns-item__title">Earnings(Annual)</div>
+                        <div class="columns-item__sub-title">$800,000</div>
+                    </div>
+                    <div class="columns-item__icon-wrap">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-item__wrap">
+                <div class="columns-item b-yellow">
+                    <div class="columns-item__text-wrap">
+                        <div class="columns-item__title">Task</div>
+                        <div class="columns-item__sub-title">13</div>
+                    </div>
+                    <div class="columns-item__icon-wrap">
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-item__wrap">
+                <div class="columns-item b-blue">
+                    <div class="columns-item__text-wrap">
+                        <div class="columns-item__title">Request</div>
+                        <div class="columns-item__sub-title">26</div>
+                    </div>
+                    <div class="columns-item__icon-wrap">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
